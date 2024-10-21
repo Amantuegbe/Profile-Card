@@ -27,7 +27,19 @@ body {
     background: #fff;
     border-radius: 24px;
     padding: 25px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.profile-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 33%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: #4070f4;
 }
 
 .image {
@@ -38,7 +50,6 @@ body {
     background-color: #4070f4;
     padding: 3px;
     margin-bottom: 10px;
-
 }
 
 .image .profile-img {
@@ -54,7 +65,6 @@ body {
     flex-direction: column;
     align-items: center;
     color: #333;
-
 }
 
 .text-data .name {
@@ -107,22 +117,23 @@ body {
 }
 
 .buttons .button:hover {
-    background-color: #0e4bf1;    
+    background-color: #0e4bf1;
 }
 
 .profile-card .analytics {
     display: flex;
     align-items: center;
-    margin-top: 25px;    
+    margin-top: 15px;
 }
 
-.analytics data{
+.analytics .data {
     display: flex;
     align-items: center;
     color: #333;
     padding: 0 20px;
-    border-right: 2px solid #e7e7e7;    
+    border-right: 2px solid #e7e7e7;
 }
+
 .data i {
     font-size: 18px;
     margin-right: 6px;
@@ -130,6 +141,4 @@ body {
 
 .data:last-child {
     border-right: none;
-
 }
-
